@@ -2,9 +2,28 @@ html,
 body {
   margin: 0;
 }
+
 body {
   background: url(../img/12_col.gif) center top repeat-y;
   background-size: 90%;
+}
+.content {
+  display: flex;
+  padding: 20px;
+}
+header {
+  align-items: center;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  border: 2px solid black;
+}
+header button:last-child {
+  margin-left: auto;
+}
+.sidebar {
+  display: flex;
+  padding: 20px;
 }
 .container {
   width: calc(90% - 20px);
@@ -12,7 +31,11 @@ body {
   display: grid;
   gap: 20px;
 }
-header,
+.container div {
+  border: 2px solid black;
+  min-height: 80px;
+}
+
 footer,
 main,
 aside,
